@@ -44,10 +44,30 @@ void main() {
   ); //Returns true if the string is not empty
 
   // 4)toUpperCase:
+  print(
+    '4. toUpperCase: ${Text.toUpperCase()}',
+  ); //Converts the string to uppercase
+
   // 5)toLowerCase:
+  print(
+    '5. toLowerCase: ${Text.toLowerCase()}',
+  ); //Converts the string to lowercase
+
   // 6) trim
+  print(
+    '6. trim: ${Text.trim()}',
+  ); //Removes leading and trailing whitespace from the string
+
   // 7)trimLef
+  print(
+    '7. trimLeft: ${Text.trimLeft()}',
+  ); //Removes leading whitespace from the string
+
   // 8)trimRight
+  print(
+    '8. trimRight: ${Text.trimRight()}',
+  ); //Removes trailing whitespace from the string
+
   // 9)contains
   // 10)startsWith
   // 11)endsWith
