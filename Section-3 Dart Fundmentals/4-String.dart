@@ -18,4 +18,10 @@ void main() {
   String multiLineString = '''This is a multi-line
   String in Dart. It contains multiple lines of text.'''; //Using triple quotes
   print(multiLineString);
+
+  //Concatenation
+  String firstName = "Usman";
+  String lastName = "Khan";
+  String fullName = firstName + " " + lastName; //Using + operator
+  print(fullName);
 }
