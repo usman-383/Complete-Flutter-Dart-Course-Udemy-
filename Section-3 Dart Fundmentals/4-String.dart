@@ -7,3 +7,15 @@ String :
       characters and support various operations such as 
       concatenation, interpolation, and manipulation.
 */
+
+void main() {
+  String name = "Usman Khan"; //Using double quotes
+  print(name);
+
+  String name2 = 'Usman Khan'; //Using single quotes
+  print(name2);
+
+  String multiLineString = '''This is a multi-line
+  String in Dart. It contains multiple lines of text.'''; //Using triple quotes
+  print(multiLineString);
+}
