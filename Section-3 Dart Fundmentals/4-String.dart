@@ -25,38 +25,44 @@ void main() {
   String fullName = firstName + " " + lastName; //Using + operator
   print(fullName);
 
-  //String Methods.
-  String str = " Hello, Dart! ";
-  print(str);
-  print(str.length); //Length of the string
-  print(str.toUpperCase()); //Convert to uppercase
-  print(str.trim()); //Remove leading and trailing whitespace
-  print(str.trim().toUpperCase()); //Convert to uppercase and remove whitespace
-  print(str.toLowerCase()); //Convert to lowercase
-  print(str.contains("Dart")); //Check if the string contains a substring
+  //String Methods
+  String Text = " Flutter Dart ";
+  String empty = "";
+  String number = "7";
+
+  print("Original Text: $Text\n");
+
+  // 1)Length:
+  print('1. length: $Text.length'); //Returns the length of the string
+
+  // 2)isEmpty:
+  print('2. isEmpty: ${empty.isEmpty}'); //Returns true if the string is empty
+
+  // isNotEmpty:
   print(
-    str.replaceAll("Dart", "Flutter"),
-  ); //Replace a substring with another substring
-  print(str.startsWith(" Hello")); //Check if the string starts with a substring
-  print(str.endsWith("! ")); //Check if the string ends with a substring
-  print(str.split(", ")); //Split the string into a list of substrings
-  print(str.indexOf("Dart")); //Get the index of a substring
-  print(str.substring(7, 11)); //Get a substring from the string
-  print(str.isEmpty); //Check if the string is empty
-  print(str.isNotEmpty); //Check if the string is not empty
-  print(
-    str.replaceFirst("Hello", "Hi"),
-  ); //Replace the first occurrence of a substring
-  print(
-    str.replaceRange(0, 5, "Hi"),
-  ); //Replace a range of characters in the string
-  print(
-    str.replaceAllMapped(RegExp(r'\s+'), (match) => '-'),
-  ); //Replace all whitespace with a hyphen
-  print(
-    str.replaceAllMapped(
-      RegExp(r'[aeiou]'),
-      (match) => match.group(0)!.toUpperCase(),
-    ),
-  ); //Replace all vowels with uppercase
+    '3. isNotEmpty: ${Text.isNotEmpty}',
+  ); //Returns true if the string is not empty
+
+  // 4)toUpperCase:
+  // 5)toLowerCase:
+  // 6) trim
+  // 7)trimLef
+  // 8)trimRight
+  // 9)contains
+  // 10)startsWith
+  // 11)endsWith
+  // 12)indexOf
+  // 13)lastIndexOf
+  // 14)replaceAll
+  // 15)replaceFirst
+  // 16)substring
+  // 17)split
+  // 18)compareTo
+  // 19)padLeft
+  // 20)padRight
+  // 21)codeUnitAt
+  // 22)runes
+  // 23)codeUnits
+  // 25)codeUnitAt
+  // 24)allMatches
 }
