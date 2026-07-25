@@ -69,7 +69,15 @@ void main() {
   ); //Removes trailing whitespace from the string
 
   // 9)contains
+  print(
+    '9. contains: ${number.contains("7")}',
+  ); //Returns true if the string contains the specified substring
+
   // 10)startsWith
+  print(
+    '10. startWith: ${Text.startsWith("F")}',
+  ); //Returns true if the string starts with the specified substring
+
   // 11)endsWith
   // 12)indexOf
   // 13)lastIndexOf
