@@ -25,20 +25,20 @@ void main() {
   bool isTrue = true;
   print(isTrue);
 
-  //   // 5) num: Represents numeric values, which can be either int or double.
-  //   // Example:
-  //   num c = 20;
-  //   num d = 30.5;
-  //   print(c);
-  //   print(d);
+  // 5) num: Represents numeric values, which can be either int or double.
+  // Example:
+  num c = 20;
+  num d = 30.5;
+  print(c);
+  print(d);
 
-  //   // 6) BigInt: Represents arbitrarily large integers.
-  //   // Example:
-  //   BigInt e = BigInt.parse('1234567890123456789012345678901234567890');
-  //   print(e);
+  // // 6) BigInt: Represents arbitrarily large integers.
+  // // Example:
+  // BigInt e = BigInt.parse('1234567890123456789012345678901234567890');
+  // print(e);
 
-  //   // 7) char: Represents a single character (a string of length 1).
-  //   // Example:
-  //   String char = 'A';
-  //   print(char);
+  // // 7) char: Represents a single character (a string of length 1).
+  // // Example:
+  // String char = 'A';
+  // print(char);
 }
