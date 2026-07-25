@@ -37,8 +37,8 @@ void main() {
   BigInt e = BigInt.parse('1234567890123456789012345678901234567890');
   print(e);
 
-  // // 7) char: Represents a single character (a string of length 1).
-  // // Example:
-  // String char = 'A';
-  // print(char);
+  // 7) char: Represents a single character (a string of length 1).
+  // Example:
+  String char = 'A';
+  print(char);
 }
