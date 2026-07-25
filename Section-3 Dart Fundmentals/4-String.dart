@@ -79,10 +79,30 @@ void main() {
   ); //Returns true if the string starts with the specified substring
 
   // 11)endsWith
+  print(
+    '11. endsWith: ${Text.endsWith("t")}',
+  ); //Returns true if the string ends with the specified substring
+
   // 12)indexOf
+  print(
+    '12. indexOf: ${Text.indexOf("D")}',
+  ); //Returns the index of the first occurrence of the specified substring
+
   // 13)lastIndexOf
+  print(
+    '13. lastIndexof: ${Text.lastIndexOf("t")}',
+  ); //Returns the index of the last occurrence of the specified substring
+
   // 14)replaceAll
+  print(
+    '14. replaceAll: ${Text.replaceAll("Dart", "SDK")}',
+  ); //Replaces all occurrences of the specified substring with another substring
+
   // 15)replaceFirst
+  print(
+    '15. replaceFirst: ${Text.replaceFirst("Dart", "SDK")}',
+  ); //Replaces the first occurrence of the specified substring with another substring
+
   // 16)substring
   // 17)split
   // 18)compareTo
