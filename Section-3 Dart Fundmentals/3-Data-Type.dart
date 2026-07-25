@@ -10,10 +10,10 @@ void main() {
   int a = 10;
   print(a);
 
-  //   // 2) double: Represents floating-point values (decimal numbers).
-  //   // Example:
-  //   double b = 3.14;
-  //   print(b);
+  // 2) double: Represents floating-point values (decimal numbers).
+  // Example:
+  double b = 3.14;
+  print(b);
 
   //   // 3) String: Represents a sequence of characters (text).
   //   // Example:
