@@ -20,10 +20,10 @@ void main() {
   String name = "John";
   print(name);
 
-  //   // 4) bool: Represents boolean values (true or false).
-  //   // Example:
-  //   bool isTrue = true;
-  //   print(isTrue);
+  // 4) bool: Represents boolean values (true or false).
+  // Example:
+  bool isTrue = true;
+  print(isTrue);
 
   //   // 5) num: Represents numeric values, which can be either int or double.
   //   // Example:
