@@ -15,10 +15,10 @@ void main() {
   double b = 3.14;
   print(b);
 
-  //   // 3) String: Represents a sequence of characters (text).
-  //   // Example:
-  //   String name = "John";
-  //   print(name);
+  // 3) String: Represents a sequence of characters (text).
+  // Example:
+  String name = "John";
+  print(name);
 
   //   // 4) bool: Represents boolean values (true or false).
   //   // Example:
