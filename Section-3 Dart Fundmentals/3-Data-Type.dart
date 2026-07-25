@@ -32,10 +32,10 @@ void main() {
   print(c);
   print(d);
 
-  // // 6) BigInt: Represents arbitrarily large integers.
-  // // Example:
-  // BigInt e = BigInt.parse('1234567890123456789012345678901234567890');
-  // print(e);
+  // 6) BigInt: Represents arbitrarily large integers.
+  // Example:
+  BigInt e = BigInt.parse('1234567890123456789012345678901234567890');
+  print(e);
 
   // // 7) char: Represents a single character (a string of length 1).
   // // Example:
