@@ -17,7 +17,7 @@ class App extends StatelessWidget {
 
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('GoMoon'),
+          title: Center(child: const Text('GoMoon')),
           backgroundColor: Colors.red,
         ),
       ),
