@@ -11,9 +11,17 @@ Dart supports two main types of numbers: integers and doubles.
 */
 
 void main() {
+  // Integer (int)
   int num1 = 10;
   print("Integer: $num1");
 
+  // Double (double)
   double num2 = 3.14;
   print("Double: $num2");
+
+  // Num (can be int or double)
+  num num3 = 20;
+  num num4 = 30.5;
+  print("Num (int): $num3");
+  print("Num (double): $num4");
 }
