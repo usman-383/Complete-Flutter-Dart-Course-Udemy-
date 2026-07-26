@@ -113,4 +113,44 @@ void main() {
   print(
     '15. toStringAsFixed: ${number.toStringAsFixed(2)}',
   ); //Converts the number to a string with a fixed number of decimal places
+
+  // 16)toStringAsPrecision:
+  print(
+    '16. toStringAsPrecision: ${number.toStringAsPrecision(3)}',
+  ); //Converts the number to a string with a specified number of significant digits
+
+  // 17)toStringAsExponential:
+  print(
+    '17. toStringAsExponential: ${number.toStringAsExponential(2)}',
+  ); //Converts the number to a string in exponential notation with a specified number of decimal places
+
+  // 18)compareTo:
+  print(
+    '18. compareTo: ${number.compareTo(20)}',
+  ); //Compares the number with another number and returns -1, 0, or 1
+
+  // 19)remainder:
+  print(
+    '19. remainder: ${number.remainder(3)}',
+  ); //Returns the remainder of the division of the number by another number
+
+  // 20)clamp:
+  print(
+    '20. clamp: ${number.clamp(5, 15)}',
+  ); //Returns the number clamped to a specified range
+
+  // 21)roundToDouble:
+  print(
+    '21. roundToDouble: ${number.roundToDouble()}',
+  ); //Rounds the number to the nearest integer and returns it as a double
+
+  // 22)sign:
+  print(
+    '22. sign: ${number.sign}',
+  ); //Returns the sign of the number (-1 for negative, 0 for zero, 1 for positive)
+
+  // 23)hashCode:
+  print(
+    '23. hashCode: ${number.hashCode}',
+  ); //Returns the hash code of the number
 }
