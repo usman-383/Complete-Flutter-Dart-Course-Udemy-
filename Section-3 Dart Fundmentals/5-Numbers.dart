@@ -24,4 +24,18 @@ void main() {
   num num4 = 30.5;
   print("Num (int): $num3");
   print("Num (double): $num4");
+
+  //Operations on Numbers
+  num a = 30;
+  num b = 20;
+
+  // Addition
+  print("Addition: ${a + b}");
+  print("Subtraction: ${a - b}");
+  print("Multiplication: ${a * b}");
+  print("Division: ${a / b}");
+  print(
+    "Integer Division: ${a ~/ b}",
+  ); // Returns the integer part of the division
+  print("Modulus: ${a % b}"); // Returns the remainder of the division
 }
