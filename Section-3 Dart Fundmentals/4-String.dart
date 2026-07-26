@@ -104,13 +104,52 @@ void main() {
   ); //Replaces the first occurrence of the specified substring with another substring
 
   // 16)substring
+  print(
+    '16. substring: ${number.substring(0, 1)}',
+  ); //Returns a substring of the string from the specified start index to the specified end index
+
   // 17)split
+  print(
+    '17. split: ${Text.split(" ")}',
+  ); //Splits the string into a list of substrings based on the specified delimiter
+
   // 18)compareTo
+  print(
+    '18. compareTo: ${Text.compareTo(" Flutter Dart ")}',
+  ); //Compares the string to another string and returns an integer indicating the result of the comparison
+
   // 19)padLeft
+  print(
+    '19. padLeft: ${number.padLeft(5, "0")}',
+  ); //Pads the string on the left with the specified character until it reaches the specified length
+
   // 20)padRight
+  print(
+    '20. padRight: ${number.padRight(5, "0")}',
+  ); //Pads the string on the right with the specified character until it reaches the specified length
+
   // 21)codeUnitAt
+  print(
+    '21. codeUnitAt: ${Text.codeUnitAt(0)}',
+  ); //Returns the Unicode code unit of the character at the specified index
+
   // 22)runes
+  print(
+    '22. runes: ${Text.runes}',
+  ); //Returns an iterable of the Unicode code points of the string
+
   // 23)codeUnits
+  print(
+    '23. codeUnits: ${Text.codeUnits}',
+  ); //Returns a list of the Unicode code units of the string
+
   // 25)codeUnitAt
+  print(
+    '25. codeUnitAt: ${Text.codeUnitAt(0)}',
+  ); //Returns the Unicode code unit of the character at the specified index
+
   // 24)allMatches
+  print(
+    '24. allMatches: ${Text.allMatches("Dart")}',
+  ); //Returns an iterable of all matches of the specified pattern in the string
 }
