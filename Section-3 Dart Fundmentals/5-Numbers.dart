@@ -6,6 +6,6 @@ Dart supports two main types of numbers: integers and doubles.
    Example: 1, -5, 42
 2) Doubles (double): Represents floating-point numbers with decimal points.
    Example: 3.14, -0.5, 2.0
-3)Numbers can be used in various mathematical operations, such as addition, subtraction, multiplication, 
-and division. Dart also provides built-in methods for performing calculations and manipulating numeric values.
+3)Num: Represents numeric values, which can be either int or double. 
+   Example: 10 (int), 3.14 (double)
 */
