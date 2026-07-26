@@ -38,4 +38,12 @@ void main() {
     "Integer Division: ${a ~/ b}",
   ); // Returns the integer part of the division
   print("Modulus: ${a % b}"); // Returns the remainder of the division
+
+  //Parse String to Number
+  var str1 = num.parse('100');
+  print(str1);
+
+  //Parse String to Double
+  var str2 = num.parse('3.15');
+  print(str2);
 }
