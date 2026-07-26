@@ -13,8 +13,9 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.black),
       title: 'Go Moon',
-      home: Scaffold(backgroundColor: Colors.black),
+      home: Scaffold(),
     );
   }
 }
