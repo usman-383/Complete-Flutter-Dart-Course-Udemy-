@@ -9,3 +9,11 @@ Dart supports two main types of numbers: integers and doubles.
 3)Num: Represents numeric values, which can be either int or double. 
    Example: 10 (int), 3.14 (double)
 */
+
+void main() {
+  int num1 = 10;
+  print("Integer: $num1");
+
+  double num2 = 3.14;
+  print("Double: $num2");
+}
