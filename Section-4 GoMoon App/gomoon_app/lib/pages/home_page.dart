@@ -6,22 +6,20 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: _pageTitle(), backgroundColor: Colors.red),
-      body: _astroImageWidget(),
+      body: SafeArea(child: Container(child: _pageTitle())),
     );
   }
 }
 
 // This widget is used to display the title of the home page.
 Widget _pageTitle() {
-  return Center(
-    child: const Text(
-      "GoMoon",
-      style: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-        color: Colors.white,
-      ),
+  return const Text(
+    textAlign: TextAlign.center,
+    "GoMoon",
+    style: TextStyle(
+      fontSize: 50,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
     ),
   );
 }
