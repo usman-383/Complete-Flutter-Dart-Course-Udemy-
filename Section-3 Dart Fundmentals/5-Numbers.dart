@@ -46,4 +46,71 @@ void main() {
   //Parse String to Double
   var str2 = num.parse('3.15');
   print(str2);
+
+  //Numbers Methods
+  int number = 10;
+  print("Original Number: $number\n");
+
+  // 1) isEven:
+  print('1. isEven: ${number.isEven}'); //Returns true if the number is even
+
+  // 2) isOdd:
+  print('2. isOdd: ${number.isOdd}'); //Returns true if the
+
+  // 3) isNegative:
+  print(
+    '3. isNegative: ${number.isNegative}',
+  ); //Returns true if the number is negative
+
+  // 4) isPositive:
+  print(
+    '4. isPositive: ${number.isPositive}',
+  ); //Returns true if the number is positive
+
+  // 5) abs:
+  print('5. abs: ${number.abs()}'); //Returns the absolute value of the number
+
+  // 6)Finite:
+  print(
+    '6. isFinite: ${number.isFinite}',
+  ); //Returns true if the number is finite
+
+  // 7) isInfinite:
+  print(
+    '7. isInfinite: ${number.isInfinite}',
+  ); //Returns true if the number is infinite
+
+  // 8) isNaN:
+  print(
+    '8. isNaN: ${number.isNaN}',
+  ); //Returns true if the number is NaN (Not a Number)
+
+  // 9) round:
+  print(
+    '9. round: ${number.round()}',
+  ); //Returns the nearest integer to the number
+
+  // 10) ceil:
+  print(
+    '10. ceil: ${number.ceil()}',
+  ); //Returns the smallest integer greater than or equal to the number
+
+  // 11)truncate:
+  print(
+    '11. truncate: ${number.truncate()}',
+  ); //Returns the integer part of the number, discarding any fractional part
+
+  // 12)toInt:
+  print('12. toInt: ${number.toInt()}'); //Converts the number to an integer
+
+  // 13)toDouble:
+  print('13. toDouble: ${number.toDouble()}'); //Converts the number to a double
+
+  // 14)toString:
+  print('14. toString: ${number.toString()}'); //Converts the number to a string
+
+  //15)toStringAsFixed:
+  print(
+    '15. toStringAsFixed: ${number.toStringAsFixed(2)}',
+  ); //Converts the number to a string with a fixed number of decimal places
 }
