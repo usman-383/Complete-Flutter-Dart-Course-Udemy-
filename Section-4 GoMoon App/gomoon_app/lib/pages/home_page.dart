@@ -10,15 +10,18 @@ class HomePage extends StatelessWidget {
         title: const Center(child: Text('GoMoon')),
         backgroundColor: Colors.red,
       ),
-
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage("assets/images/image.jpg"),
-          ),
-        ),
-      ),
+      body: _astroImageWidget(),
     );
   }
+}
+
+Widget _astroImageWidget() {
+  return Container(
+    decoration: const BoxDecoration(
+      image: DecorationImage(
+        fit: BoxFit.cover,
+        image: AssetImage("assets/images/image.jpg"),
+      ),
+    ),
+  );
 }
