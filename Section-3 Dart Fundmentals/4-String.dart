@@ -33,7 +33,7 @@ void main() {
   print("Original Text: $Text\n");
 
   // 1)Length:
-  print('1. length: $Text.length'); //Returns the length of the string
+  print('1. length: ${Text.length}'); //Returns the length of the string
 
   // 2)isEmpty:
   print('2. isEmpty: ${empty.isEmpty}'); //Returns true if the string is empty
