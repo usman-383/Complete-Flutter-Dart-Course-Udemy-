@@ -63,9 +63,9 @@ void main() {
   ); //Returns true if the number is negative
 
   // 4) isPositive:
-  print(
-    '4. isPositive: ${number.isPositive}',
-  ); //Returns true if the number is positive
+  // print(
+  //   '4. isPositive: ${number.isPositive}',
+  // ); //Returns true if the number is positive
 
   // 5) abs:
   print('5. abs: ${number.abs()}'); //Returns the absolute value of the number
