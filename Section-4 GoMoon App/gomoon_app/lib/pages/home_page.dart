@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
-// import 'package:gomoon_app/pages/home_page.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Center(child: Text('GoMoon')),
+        backgroundColor: Colors.red,
+      ),
+
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/image.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+    );
   }
 }
