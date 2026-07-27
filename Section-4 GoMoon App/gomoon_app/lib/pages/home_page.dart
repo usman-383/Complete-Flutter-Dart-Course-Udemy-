@@ -56,13 +56,14 @@ Widget _astroImageWidget() {
 Widget _destinationDropDownWidget() {
   List<String> _items = ['james Webb Station', 'Preneure Station'];
   return Container(
+    padding: EdgeInsets.symmetric(horizontal: _deviceWidth * 0.05),
     width: _deviceWidth,
     decoration: BoxDecoration(
       color: Color.fromRGBO(53, 53, 53, 1.0),
       borderRadius: BorderRadius.circular(10),
     ),
     child: DropdownButton(
-      value: _items.first,
+      value: _ite ms.first,
       onChanged: (_) {},
       items: _items.map((e) {
         return DropdownMenuItem(child: Text(e), value: e);
