@@ -60,3 +60,10 @@ Widget _destinationDropDownWidget() {
     deviceWidth: _deviceWidth,
   );
 }
+
+Widget _travellerInformationWidget() {
+  return CustomeDropDownButtonClass(
+    values: const ['1', '2', '3', '4', '5'],
+    deviceWidth: _deviceWidth * 0.45,
+  );
+}
