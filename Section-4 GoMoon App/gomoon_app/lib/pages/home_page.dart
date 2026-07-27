@@ -15,7 +15,11 @@ class HomePage extends StatelessWidget {
         child: Container(
           height: _deviceHeight,
           width: _deviceWidth,
-          child: _pageTitle(),
+          padding: EdgeInsets.symmetric(horizontal: _deviceWidth * 0.05),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [_pageTitle(), _destinationDropDownWidget()],
+          ),
         ),
       ),
     );
@@ -44,5 +48,15 @@ Widget _astroImageWidget() {
         image: AssetImage("assets/images/image.jpg"),
       ),
     ),
+  );
+}
+
+Widget _destinationDropDownWidget() {
+  List<DropdownMenuItem<String>> _items =
+      ['james Webb Station', 'Preneure Station'].map((e) {
+        return DropdownMenuItem(child: Text(e), value: e);
+      }).toList();
+  return Container(
+    child: DropdownButton(onChanged: (_) {}, items: _items),
   );
 }
