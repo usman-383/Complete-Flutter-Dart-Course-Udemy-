@@ -21,7 +21,11 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [_pageTitle(), _destinationDropDownWidget()],
+            children: [
+              _pageTitle(),
+              _destinationDropDownWidget(),
+              _travellerInformationWidget(),
+            ],
           ),
         ),
       ),
