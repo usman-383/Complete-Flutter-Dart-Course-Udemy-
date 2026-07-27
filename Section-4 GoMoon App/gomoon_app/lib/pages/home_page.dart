@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+
+  late double _deviceHeight, _deviceWidth;
+
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    _deviceHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SafeArea(child: Container(child: _pageTitle())),
     );
