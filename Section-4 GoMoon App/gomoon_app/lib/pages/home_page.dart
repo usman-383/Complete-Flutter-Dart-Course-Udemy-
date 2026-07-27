@@ -66,8 +66,19 @@ Widget _destinationDropDownWidget() {
 }
 
 Widget _travellerInformationWidget() {
-  return CustomeDropDownButtonClass(
-    values: const ['1', '2', '3', '4', '5'],
-    deviceWidth: _deviceWidth * 0.45,
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    mainAxisSize: MainAxisSize.max,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: [
+      CustomeDropDownButtonClass(
+        values: const ['1', '2', '3', '4', '5'],
+        deviceWidth: _deviceWidth * 0.45,
+      ),
+      CustomeDropDownButtonClass(
+        values: const ['Economy', 'Business', 'First', 'Private', 'VIP'],
+        deviceWidth: _deviceWidth * 0.40,
+      ),
+    ],
   );
 }
