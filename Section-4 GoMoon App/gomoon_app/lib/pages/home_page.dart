@@ -35,88 +35,88 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-}
 
-// This widget is used to display the title of the home page.
-Widget _pageTitle() {
-  return const Text(
-    textAlign: TextAlign.center,
-    "GoMoon",
-    style: TextStyle(
-      fontSize: 50,
-      fontWeight: FontWeight.bold,
-      color: Colors.white,
-    ),
-  );
-}
-
-// This widget is used to display the image of the astronaut on the home page.
-Widget _astroImageWidget() {
-  return Container(
-    height: _deviceHeight * 0.5,
-    width: _deviceWidth * 0.65,
-    decoration: const BoxDecoration(
-      image: DecorationImage(
-        fit: BoxFit.fill,
-        image: AssetImage("assets/images/image.jpg"),
+  // This widget is used to display the title of the home page.
+  Widget _pageTitle() {
+    return const Text(
+      "GoMoon",
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontSize: 50,
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
       ),
-    ),
-  );
-}
+    );
+  }
 
-Widget _bookRideWIdget() {
-  return Container(
-    height: _deviceHeight * 0.25,
-    child: Column(
+  // This widget is used to display the image of the astronaut on the home page.
+  Widget _astroImageWidget() {
+    return Container(
+      height: _deviceHeight * 0.5,
+      width: _deviceWidth * 0.65,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.fill,
+          image: AssetImage("assets/images/image.jpg"),
+        ),
+      ),
+    );
+  }
+
+  Widget _bookRideWIdget() {
+    return Container(
+      height: _deviceHeight * 0.25,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.center,
+
+        children: [
+          _destinationDropDownWidget(),
+          _travellerInformationWidget(),
+          _rideButton(),
+        ],
+      ),
+    );
+  }
+
+  Widget _destinationDropDownWidget() {
+    return CustomeDropDownButtonClass(
+      values: const ['james Webb Station', 'Preneure Station'],
+      deviceWidth: _deviceWidth,
+    );
+  }
+
+  Widget _travellerInformationWidget() {
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       mainAxisSize: MainAxisSize.max,
       crossAxisAlignment: CrossAxisAlignment.center,
-
       children: [
-        _distinationDropDownWidget(),
-        _travellerInformationWidget(),
-        _rideButton(),
+        CustomeDropDownButtonClass(
+          values: const ['1', '2', '3', '4', '5'],
+          deviceWidth: _deviceWidth * 0.45,
+        ),
+        CustomeDropDownButtonClass(
+          values: const ['Economy', 'Business', 'First', 'Private', 'VIP'],
+          deviceWidth: _deviceWidth * 0.40,
+        ),
       ],
-    ),
-  );
-}
+    );
+  }
 
-Widget _destinationDropDownWidget() {
-  return CustomeDropDownButtonClass(
-    values: const ['james Webb Station', 'Preneure Station'],
-    deviceWidth: _deviceWidth,
-  );
-}
-
-Widget _travellerInformationWidget() {
-  return Row(
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    mainAxisSize: MainAxisSize.max,
-    crossAxisAlignment: CrossAxisAlignment.center,
-    children: [
-      CustomeDropDownButtonClass(
-        values: const ['1', '2', '3', '4', '5'],
-        deviceWidth: _deviceWidth * 0.45,
+  Widget _rideButton() {
+    return Container(
+      margin: EdgeInsets.only(bottom: _deviceWidth * 0.01),
+      width: _deviceWidth,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
       ),
-      CustomeDropDownButtonClass(
-        values: const ['Economy', 'Business', 'First', 'Private', 'VIP'],
-        deviceWidth: _deviceWidth * 0.40,
+      child: MaterialButton(
+        onPressed: () {},
+        child: Text("Book Ride", style: TextStyle(color: Colors.black)),
       ),
-    ],
-  );
-}
-
-Widget _rideButton() {
-  return Container(
-    margin: EdgeInsets.only(bottom: _deviceWidth * 0.01),
-    width: _deviceWidth,
-    decoration: BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(10),
-    ),
-    child: MaterialButton(
-      onPressed: () {},
-      child: Text("Book Ride", style: TextStyle(color: Colors.black)),
-    ),
-  );
+    );
+  }
 }
