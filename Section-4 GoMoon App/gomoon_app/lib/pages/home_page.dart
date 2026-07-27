@@ -25,7 +25,10 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [_pageTitle(), _bookRideWIdget()],
               ),
-              _astroImageWidget(),
+              Align(
+                alignment: Alignment.centerRight,
+                child: _astroImageWidget(),
+              ),
             ],
           ),
         ),
@@ -50,6 +53,8 @@ Widget _pageTitle() {
 // This widget is used to display the image of the astronaut on the home page.
 Widget _astroImageWidget() {
   return Container(
+    height: _deviceHeight * 0.5,
+    width: _deviceWidth * 0.65,
     decoration: const BoxDecoration(
       image: DecorationImage(
         fit: BoxFit.fill,
