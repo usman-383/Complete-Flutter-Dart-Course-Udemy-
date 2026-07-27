@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gomoon_app/widgets/custom_dropdown_button.dart';
 
 class HomePage extends StatelessWidget {
   late double _deviceHeight, _deviceWidth;
@@ -54,23 +55,8 @@ Widget _astroImageWidget() {
 }
 
 Widget _destinationDropDownWidget() {
-  List<String> _items = ['james Webb Station', 'Preneure Station'];
-  return Container(
-    padding: EdgeInsets.symmetric(horizontal: _deviceWidth * 0.05),
-    width: _deviceWidth,
-    decoration: BoxDecoration(
-      color: Color.fromRGBO(53, 53, 53, 1.0),
-      borderRadius: BorderRadius.circular(10),
-    ),
-    child: DropdownButton(
-      value: _ite ms.first,
-      onChanged: (_) {},
-      items: _items.map((e) {
-        return DropdownMenuItem(child: Text(e), value: e);
-      }).toList(),
-      underline: Container(),
-      dropdownColor: Color.fromRGBO(53, 53, 53, 1.0),
-      style: const TextStyle(color: Colors.white, fontSize: 20),
-    ),
+  return CustomeDropDownButtonClass(
+    values: const ['james Webb Station', 'Preneure Station'],
+    deviceWidth: _deviceWidth,
   );
 }
