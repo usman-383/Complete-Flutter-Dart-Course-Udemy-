@@ -97,5 +97,11 @@ Widget _travellerInformationWidget() {
 }
 
 Widget _rideButton() {
-  return Container(width: _deviceWidth);
+  return Container(
+    width: _deviceWidth,
+    child: MaterialButton(
+      onPressed: () {},
+      child: Text("Book Ride", style: TextStyle(color: Colors.black)),
+    ),
+  );
 }
