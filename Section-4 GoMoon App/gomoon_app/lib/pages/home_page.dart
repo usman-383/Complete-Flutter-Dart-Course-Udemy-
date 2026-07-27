@@ -98,7 +98,7 @@ Widget _travellerInformationWidget() {
 
 Widget _rideButton() {
   return Container(
-    padding: EdgeInsets.only(bottom: _deviceWidth * 0.05),
+    margin: EdgeInsets.only(bottom: _deviceWidth * 0.01),
     width: _deviceWidth,
     decoration: BoxDecoration(
       color: Colors.white,
