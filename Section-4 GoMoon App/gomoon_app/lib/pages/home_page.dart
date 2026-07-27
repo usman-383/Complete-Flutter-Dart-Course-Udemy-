@@ -21,11 +21,7 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _pageTitle(),
-              _destinationDropDownWidget(),
-              _travellerInformationWidget(),
-            ],
+            children: [_pageTitle(), _bookRideWIdget()],
           ),
         ),
       ),
@@ -54,6 +50,19 @@ Widget _astroImageWidget() {
         fit: BoxFit.fill,
         image: AssetImage("assets/images/image.jpg"),
       ),
+    ),
+  );
+}
+
+Widget _bookRideWIdget() {
+  return Container(
+    height: _deviceHeight * 0.25,
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisSize: MainAxisSize.max,
+      crossAxisAlignment: CrossAxisAlignment.center,
+
+      children: [_distinationDropDownWidget(), _travellerInformationWidget()],
     ),
   );
 }
