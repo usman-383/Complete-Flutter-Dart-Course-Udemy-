@@ -54,11 +54,22 @@ Widget _astroImageWidget() {
 }
 
 Widget _destinationDropDownWidget() {
-  List<DropdownMenuItem<String>> _items =
-      ['james Webb Station', 'Preneure Station'].map((e) {
-        return DropdownMenuItem(child: Text(e), value: e);
-      }).toList();
+  List<String> _items = ['james Webb Station', 'Preneure Station'];
   return Container(
-    child: DropdownButton(onChanged: (_) {}, items: _items),
+    width: _deviceWidth,
+    decoration: BoxDecoration(
+      color: Color.fromRGBO(53, 53, 53, 1.0),
+      borderRadius: BorderRadius.circular(10),
+    ),
+    child: DropdownButton(
+      value: _items.first,
+      onChanged: (_) {},
+      items: _items.map((e) {
+        return DropdownMenuItem(child: Text(e), value: e);
+      }).toList(),
+      underline: Container(),
+      dropdownColor: Color.fromRGBO(53, 53, 53, 1.0),
+      style: const TextStyle(color: Colors.white, fontSize: 20),
+    ),
   );
 }
