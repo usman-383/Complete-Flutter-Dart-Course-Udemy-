@@ -62,7 +62,11 @@ Widget _bookRideWIdget() {
       mainAxisSize: MainAxisSize.max,
       crossAxisAlignment: CrossAxisAlignment.center,
 
-      children: [_distinationDropDownWidget(), _travellerInformationWidget()],
+      children: [
+        _distinationDropDownWidget(),
+        _travellerInformationWidget(),
+        _rideButton(),
+      ],
     ),
   );
 }
@@ -90,4 +94,8 @@ Widget _travellerInformationWidget() {
       ),
     ],
   );
+}
+
+Widget _rideButton() {
+  return Container(width: _deviceWidth);
 }
