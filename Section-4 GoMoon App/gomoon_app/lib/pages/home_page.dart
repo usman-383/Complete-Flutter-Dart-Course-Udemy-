@@ -98,7 +98,12 @@ Widget _travellerInformationWidget() {
 
 Widget _rideButton() {
   return Container(
+    padding: EdgeInsets.only(bottom: _deviceWidth * 0.05),
     width: _deviceWidth,
+    decoration: BoxDecoration(
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(10),
+    ),
     child: MaterialButton(
       onPressed: () {},
       child: Text("Book Ride", style: TextStyle(color: Colors.black)),
