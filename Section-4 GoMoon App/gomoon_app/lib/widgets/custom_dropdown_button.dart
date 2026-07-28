@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CustomeDropDownButtonClass extends StatelessWidget {
   List<String> values;
   double deviceWidth;
@@ -23,7 +24,7 @@ class CustomeDropDownButtonClass extends StatelessWidget {
         value: values.first,
         onChanged: (_) {},
         items: values.map((e) {
-          return DropdownMenuItem(child: Text(e), value: e);
+          return DropdownMenuItem(value: e, child: Text(e));
         }).toList(),
         underline: Container(),
         dropdownColor: Color.fromRGBO(53, 53, 53, 1.0),

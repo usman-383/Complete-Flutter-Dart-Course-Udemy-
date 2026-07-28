@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _bookRideWIdget() {
-    return Container(
+    return SizedBox(
       height: _deviceHeight * 0.25,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
