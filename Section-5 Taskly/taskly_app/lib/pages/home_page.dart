@@ -17,6 +17,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     _deviceHeight = MediaQuery.of(context).size.height;
     _deviceWidth = MediaQuery.of(context).size.width;
-    return Scaffold(appBar: AppBar());
+    return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: _deviceHeight * 0.15,
+        title: const Text('Taskly', style: TextStyle(fontSize: 25)),
+      ),
+    );
   }
 }
