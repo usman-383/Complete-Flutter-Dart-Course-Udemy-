@@ -19,8 +19,11 @@ class _HomePageState extends State<HomePage> {
     _deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.red,
         toolbarHeight: _deviceHeight * 0.15,
-        title: const Text('Taskly', style: TextStyle(fontSize: 25)),
+        title: Center(
+          child: const Text('Taskly', style: TextStyle(fontSize: 25)),
+        ),
       ),
     );
   }
