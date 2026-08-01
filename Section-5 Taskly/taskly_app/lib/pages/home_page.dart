@@ -43,6 +43,17 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {},
           ),
         ),
+        ListTile(
+          title: const Text(
+            'Task 1',
+            style: TextStyle(decoration: TextDecoration.lineThrough),
+          ),
+          subtitle: Text(DateTime.now().toString()),
+          trailing: IconButton(
+            icon: const Icon(Icons.check_box_outlined, color: Colors.red),
+            onPressed: () {},
+          ),
+        ),
       ],
     );
   }
