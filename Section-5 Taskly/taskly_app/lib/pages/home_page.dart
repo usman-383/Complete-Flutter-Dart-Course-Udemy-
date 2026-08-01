@@ -49,6 +49,11 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _addTaskButton() {
-    return FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add));
+    return FloatingActionButton(
+      onPressed: () {},
+      child: const Icon(Icons.add, color: Colors.white),
+      backgroundColor: Colors.red,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+    );
   }
 }
