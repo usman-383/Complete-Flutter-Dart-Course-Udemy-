@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: _taskList(),
+      floatingActionButton: _addTaskButton(),
     );
   }
 
@@ -43,18 +44,11 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {},
           ),
         ),
-        ListTile(
-          title: const Text(
-            'Task 1',
-            style: TextStyle(decoration: TextDecoration.lineThrough),
-          ),
-          subtitle: Text(DateTime.now().toString()),
-          trailing: IconButton(
-            icon: const Icon(Icons.check_box_outlined, color: Colors.red),
-            onPressed: () {},
-          ),
-        ),
       ],
     );
+  }
+
+  Widget _addTaskButton() {
+    return FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add));
   }
 }
