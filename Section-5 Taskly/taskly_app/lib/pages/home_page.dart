@@ -25,6 +25,25 @@ class _HomePageState extends State<HomePage> {
           child: const Text('Taskly', style: TextStyle(fontSize: 25)),
         ),
       ),
+      body: _taskList(),
+    );
+  }
+
+  Widget _taskList() {
+    return ListView(
+      children: [
+        ListTile(
+          title: const Text(
+            'Task 1',
+            style: TextStyle(decoration: TextDecoration.lineThrough),
+          ),
+          subtitle: Text(DateTime.now().toString()),
+          trailing: IconButton(
+            icon: const Icon(Icons.check_box),
+            onPressed: () {},
+          ),
+        ),
+      ],
     );
   }
 }
