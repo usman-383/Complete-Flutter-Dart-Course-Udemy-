@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           ),
           subtitle: Text(DateTime.now().toString()),
           trailing: IconButton(
-            icon: const Icon(Icons.check_box),
+            icon: const Icon(Icons.check_box_outlined, color: Colors.red),
             onPressed: () {},
           ),
         ),
